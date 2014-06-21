@@ -68,9 +68,6 @@ function beu_validate(&$regOptions)
 			if (!in_array($domain, $checkproviders))
 				fatal_lang_error('registration_failed_email_provider2');
 		}
-		
-		if (empty($modSettings['block_by_provider']) && empty($modSettings['allow_by_provider']))
-			fatal_lang_error('registration_failed_email');
 	}
 }
 
